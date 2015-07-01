@@ -1,0 +1,66 @@
+2013-08-22 00:06:06,275 [1] ERROR NHibernate.Hql.Parser [(null)] - NoViableAltException(41@[])
+2013-08-22 00:06:29,973 [1] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select friendsuse0_.FID as FID0_, friendsuse0_.ID as ID0_, friendsuse0_.ScreenName as ScreenName0_ from FriendsUser friendsuse0_ order by newid() limit 1
+System.Data.SQLite.SQLiteException: SQLite error
+no such function: newid
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2013-08-22 00:06:30,024 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+no such function: newid
+2013-08-22 00:06:30,031 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+no such function: newid
+2013-08-22 00:08:03,901 [1] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select friendsuse0_.FID as FID0_, friendsuse0_.ID as ID0_, friendsuse0_.ScreenName as ScreenName0_ from FriendsUser friendsuse0_ order by RANDOM(friendsuse0_.FID) limit 1
+System.Data.SQLite.SQLiteException: SQLite error
+wrong number of arguments to function RANDOM()
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2013-08-22 00:08:03,948 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+wrong number of arguments to function RANDOM()
+2013-08-22 00:08:03,955 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+wrong number of arguments to function RANDOM()
+2013-08-22 00:09:25,545 [1] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select friendsuse0_.FID as FID0_, friendsuse0_.ID as ID0_, friendsuse0_.ScreenName as ScreenName0_ from FriendsUser friendsuse0_ order by RANDOM(100) limit 1
+System.Data.SQLite.SQLiteException: SQLite error
+wrong number of arguments to function RANDOM()
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2013-08-22 00:09:25,592 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+wrong number of arguments to function RANDOM()
+2013-08-22 00:09:25,599 [1] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+wrong number of arguments to function RANDOM()
+2013-09-05 00:19:37,212 [10] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - 该字符串未被识别为有效的布尔值。
+2013-09-05 22:57:11,332 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: ssdfsdf
+System.Data.SQLite.SQLiteException: SQLite error
+near "ssdfsdf": syntax error
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2013-09-05 22:57:11,380 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+near "ssdfsdf": syntax error
+2013-09-05 22:57:11,385 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - SQLite error
+near "ssdfsdf": syntax error
